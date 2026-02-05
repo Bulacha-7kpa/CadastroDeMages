@@ -9,5 +9,4 @@ public class MasteringSpringbootApplication {
 
 		SpringApplication.run(MasteringSpringbootApplication.class, args);
 	}
-
 }
