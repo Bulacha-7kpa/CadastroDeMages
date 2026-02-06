@@ -1,6 +1,9 @@
-package com.ph.mastering_springboot;
+package com.ph.mastering_springboot.Mages;
 
+import com.ph.mastering_springboot.Odisseias.OdisseiasModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "tb_cadastro")
@@ -12,6 +15,10 @@ public class MageModel {
     private String name;
     private String school;
     private int level;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "odisseias_id")
+    private OdisseiasModel odisseias;
 
     public MageModel() {
     }

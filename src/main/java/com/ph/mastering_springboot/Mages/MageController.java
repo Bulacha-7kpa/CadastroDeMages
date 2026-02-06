@@ -1,4 +1,4 @@
-package com.ph.mastering_springboot;
+package com.ph.mastering_springboot.Mages;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
